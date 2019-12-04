@@ -4,8 +4,10 @@ const log = require('log');
 
 module.exports = add;
 
+const add_base = 4;
+
 function add(x) {
-  const result = x + 2;
-  log(2, ' + ', x, ' = ', result);
+  const result = x + add_base;
+  log(add_base, ' + ', x, ' = ', result);
   return result;
 }
