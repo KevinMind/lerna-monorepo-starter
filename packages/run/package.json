@@ -1,6 +1,6 @@
 {
   "name": "run",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "private": true,
   "description": "> TODO: description",
   "author": "kevinmeinhardt <kevin.meinhardt@smava.de>",
@@ -25,8 +25,8 @@
     "url": "https://github.com/KevinMind/lerna-monorepo-starter/issues"
   },
   "dependencies": {
-    "add": "^2.0.0",
+    "add": "^2.0.1",
     "lodash": "^4.17.15",
-    "log": "^2.0.0"
+    "log": "^2.1.0"
   }
 }
