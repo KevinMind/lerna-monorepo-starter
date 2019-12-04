@@ -24,5 +24,8 @@
   "bugs": {
     "url": "https://github.com/KevinMind/lerna-monorepo-starter/issues"
   },
-  "homepage": "https://github.com/KevinMind/lerna-monorepo-starter#readme"
+  "homepage": "https://github.com/KevinMind/lerna-monorepo-starter#readme",
+  "dependencies": {
+    "chalk": "^3.0.0"
+  }
 }
