@@ -1,0 +1,16 @@
+{
+  "name": "lerna-mono-starter",
+  "version": "0.0.0",
+  "description": "lerna monorepo starter",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "lerna": "^3.18.4"
+  },
+  "private": true,
+  "workspaces": ["packages/*"]
+}
