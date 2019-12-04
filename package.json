@@ -4,13 +4,29 @@
   "description": "lerna monorepo starter",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "commit": "git add . && git-cz",
+    "test": "echo \"Error: no test specified\""
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "commitizen": "^4.0.3",
+    "husky": "^3.1.0",
     "lerna": "^3.18.4"
   },
   "private": true,
-  "workspaces": ["packages/*"]
+  "workspaces": [
+    "packages/*"
+  ],
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "yarn test",
+      "pre-push": "yarn test"
+    }
+  }
 }
