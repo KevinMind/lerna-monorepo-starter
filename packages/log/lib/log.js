@@ -1,7 +1,9 @@
 'use strict';
 
+const chalk = require('chalk');
+
 module.exports = log;
 
 function log(...message) {
-  console.log(new Date().toDateString(), ': ', ...message);
+  chalk.green(new Date().toDateString(), ': ', ...message);
 }
