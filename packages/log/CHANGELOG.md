@@ -3,6 +3,68 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [3.2.0](https://github.com/KevinMind/lerna-monorepo-starter/compare/log@3.1.0...log@3.2.0) (2019-12-05)
+
+
+### Features
+
+* **.:** use different versions of add ([9640959](https://github.com/KevinMind/lerna-monorepo-starter/commit/9640959544eeddd20274ec9ddf7417ec2ea090eb))
+
+
+
+
+
+# [3.1.0](https://github.com/KevinMind/lerna-monorepo-starter/compare/log@3.0.3...log@3.1.0) (2019-12-05)
+
+
+### Features
+
+* **.:** update fixes ([4641470](https://github.com/KevinMind/lerna-monorepo-starter/commit/4641470938bde427e3521ec7ac09ea6e3682ac1f))
+
+
+
+
+
+## [3.0.3](https://github.com/KevinMind/lerna-monorepo-starter/compare/log@3.0.2...log@3.0.3) (2019-12-05)
+
+**Note:** Version bump only for package log
+
+
+
+
+
+## [3.0.2](https://github.com/KevinMind/lerna-monorepo-starter/compare/log@3.0.1...log@3.0.2) (2019-12-05)
+
+**Note:** Version bump only for package log
+
+
+
+
+
+## [3.0.1](https://github.com/KevinMind/lerna-monorepo-starter/compare/log@3.0.0...log@3.0.1) (2019-12-05)
+
+**Note:** Version bump only for package log
+
+
+
+
+
+# [3.0.0](https://github.com/KevinMind/lerna-monorepo-starter/compare/log@2.1.0...log@3.0.0) (2019-12-05)
+
+
+### Build System
+
+* **.:** implement rollup and babel ([2aa42ab](https://github.com/KevinMind/lerna-monorepo-starter/commit/2aa42ab527e8e85dd7225c4239e6ceaf37a0be21))
+
+
+### BREAKING CHANGES
+
+* **.:** use start and build commands to run apps
+
+
+
+
+
 # [2.1.0](https://github.com/KevinMind/lerna-monorepo-starter/compare/log@2.0.0...log@2.1.0) (2019-12-04)
 
 
