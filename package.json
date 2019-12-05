@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "commit": "git add . && git-cz",
-    "release": "standard-version",
+    "release": "lerna version --conventional-commits",
+    "release:root": "standard-version",
     "publish:local": "lerna publish --registry http://localhost:4873",
     "registry:local": "",
     "test": "echo \"Error: no test specified\""
