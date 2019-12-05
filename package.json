@@ -4,6 +4,7 @@
   "description": "lerna monorepo starter",
   "main": "index.js",
   "scripts": {
+    "bootstrap": "lerna bootstrap",
     "start": "lerna run start --parallel --stream",
     "start:npm": "verdaccio -l4873",
     "commit": "git add . && git-cz",
