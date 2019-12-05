@@ -1,6 +1,6 @@
 {
   "name": "fragment",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "private": true,
   "description": "> TODO: description",
   "author": "kevinmeinhardt <kevin.meinhardt@smava.de>",
@@ -18,7 +18,6 @@
   "bugs": {
     "url": "https://github.com/KevinMind/lerna-monorepo-starter/issues"
   },
-  "dependencies": {},
   "devDependencies": {
     "@babel/core": "^7.4.5",
     "@babel/plugin-syntax-dynamic-import": "^7.2.0",
