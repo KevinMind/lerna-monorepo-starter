@@ -4,6 +4,7 @@
   "description": "lerna monorepo starter",
   "main": "index.js",
   "scripts": {
+    "start": "lerna run start --parallel --stream",
     "commit": "git add . && git-cz",
     "release": "lerna version --conventional-commits",
     "release:root": "standard-version",

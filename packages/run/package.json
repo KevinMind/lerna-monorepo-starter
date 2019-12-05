@@ -24,7 +24,7 @@
     "url": "https://github.com/KevinMind/lerna-monorepo-starter/issues"
   },
   "dependencies": {
-    "add": "^3.5.1",
+    "add": "3.4.0",
     "lodash": "^4.17.15",
     "log": "^3.2.0"
   }
