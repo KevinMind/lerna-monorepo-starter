@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.2.1](https://github.com/KevinMind/micro-poc/compare/server@1.2.0...server@1.2.1) (2019-12-05)
+
+**Note:** Version bump only for package server
+
+
+
+
+
 # [1.2.0](https://github.com/KevinMind/micro-poc/compare/server@1.1.5...server@1.2.0) (2019-12-05)
 
 
