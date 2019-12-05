@@ -1,6 +1,6 @@
 {
   "name": "lerna-mono-starter",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "lerna monorepo starter",
   "main": "index.js",
   "scripts": {
