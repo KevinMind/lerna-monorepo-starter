@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [3.3.0](https://github.com/KevinMind/lerna-monorepo-starter/compare/add@3.2.2...add@3.3.0) (2019-12-05)
+
+
+### Features
+
+* **add:** update add_base to 50 ([b272093](https://github.com/KevinMind/lerna-monorepo-starter/commit/b2720931c33880fc4a4a6dd5d51c55f81b8cbcb2))
+
+
+
+
+
 ## [3.2.2](https://github.com/KevinMind/lerna-monorepo-starter/compare/add@3.2.1...add@3.2.2) (2019-12-05)
 
 **Note:** Version bump only for package add
