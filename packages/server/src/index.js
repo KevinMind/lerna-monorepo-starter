@@ -1,10 +1,10 @@
 import express from 'express';
 
-import add from 'add/build/add.esm.js';
+import add from 'add';
 
 const app = express();
 
-app.use('', (req, res) => res.json({ result: add(4) }));
+app.use('', (req, res) => res.json({ result: add(parseInt(req.query.add, 10) || 0) }));
 
 app.listen(3000, err => {
   if (err) {
