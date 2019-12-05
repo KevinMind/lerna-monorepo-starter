@@ -1,12 +1,8 @@
-'use strict';
-
-const log = require('log');
-
-module.exports = add;
+import log from 'log';
 
 const add_base = 10;
 
-function add(x) {
+export default function index(x) {
   const result = x + add_base;
   log(add_base, ' + ', x, ' = ', result);
   return result;

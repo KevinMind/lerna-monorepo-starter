@@ -1,0 +1,40 @@
+{
+  "name": "server",
+  "version": "0.0.0",
+  "description": "node.js server 1",
+  "author": "kmeinhardt <kevin.meinhardt@smava.de>",
+  "homepage": "https://github.com/KevinMind/micro-poc#readme",
+  "license": "ISC",
+  "main": "build/index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KevinMind/micro-poc.git"
+  },
+  "scripts": {
+    "build": "rollup -c --environment NODEV_ENV:production",
+    "start": "rollup -c -w --environment NODE_ENV:development",
+    "test": "echo \"Error: run tests from root\" && exit 1"
+  },
+  "bugs": {
+    "url": "https://github.com/KevinMind/micro-poc/issues"
+  },
+  "dependencies": {
+    "@babel/core": "^7.4.5",
+    "add": "^2.1.0",
+    "axios": "^0.19.0",
+    "express": "^4.17.1",
+    "jsdom": "^15.1.1",
+    "lodash": "^4.17.11",
+    "qs": "^6.7.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.4.5",
+    "@babel/plugin-syntax-dynamic-import": "^7.2.0",
+    "rollup": "^1.14.4",
+    "rollup-plugin-babel": "^4.3.2",
+    "rollup-plugin-html": "^0.2.1",
+    "rollup-plugin-node-resolve": "^5.0.1",
+    "rollup-plugin-run": "^1.1.0",
+    "rollup-watch": "^4.3.1"
+  }
+}
