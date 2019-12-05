@@ -8,7 +8,7 @@
     "start:npm": "verdaccio -l4873",
     "commit": "git add . && git-cz",
     "release": "lerna version --conventional-commits",
-    "release:root": "standard-version",
+    "release:root": "standard-version && git push && git push --follow-tags",
     "publish:local": "lerna publish from-package --registry http://localhost:4873",
     "test": "echo \"Error: no test specified\""
   },
