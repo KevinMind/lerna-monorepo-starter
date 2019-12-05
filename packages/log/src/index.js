@@ -1,6 +1,6 @@
-const chalk = require('chalk');
+import chalk from 'chalk';
 
 export default function log(...message) {
-  chalk.green(new Date().toDateString(), ': ', ...message);
-  chalk.blue('finished');
+  console.log(chalk.green(new Date().toDateString(), ': ', ...message));
+  console.log(chalk.blue('finished'));
 }
