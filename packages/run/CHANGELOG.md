@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.3.0](https://github.com/KevinMind/lerna-monorepo-starter/compare/run@2.2.0...run@2.3.0) (2019-12-05)
+
+
+### Features
+
+* **.:** use different version of add util ([5a4d374](https://github.com/KevinMind/lerna-monorepo-starter/commit/5a4d37416d75aa5a1a5260b3ce9c43cbc0bf1633))
+
+
+
+
+
 # [2.2.0](https://github.com/KevinMind/lerna-monorepo-starter/compare/run@2.1.1...run@2.2.0) (2019-12-05)
 
 
