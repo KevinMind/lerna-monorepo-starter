@@ -1,7 +1,9 @@
 {
   "command": {
     "publish": {
-      "conventionalCommits": true
+      "conventionalCommits": true,
+      "registry": "http://localhost:4873"
+
     }
   },
   "npmClient": "yarn",
