@@ -6,6 +6,8 @@
   "scripts": {
     "commit": "git add . && git-cz",
     "release": "standard-version",
+    "publish": "lerna publish --registry http://localhost:4873",
+    "start:registry:local": "",
     "test": "echo \"Error: no test specified\""
   },
   "author": "",
