@@ -5,11 +5,11 @@
   "main": "index.js",
   "scripts": {
     "start": "lerna run start --parallel --stream",
+    "start:npm": "verdaccio -l4873",
     "commit": "git add . && git-cz",
     "release": "lerna version --conventional-commits",
     "release:root": "standard-version",
     "publish:local": "lerna publish from-package --registry http://localhost:4873",
-    "registry:local": "",
     "test": "echo \"Error: no test specified\""
   },
   "author": "",
@@ -18,7 +18,8 @@
     "commitizen": "^4.0.3",
     "husky": "^3.1.0",
     "lerna": "^3.18.4",
-    "standard-version": "^7.0.1"
+    "standard-version": "^7.0.1",
+    "verdaccio": "^4.3.5"
   },
   "private": true,
   "workspaces": [
