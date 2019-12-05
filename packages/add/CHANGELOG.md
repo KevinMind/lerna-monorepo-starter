@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [3.1.0](https://github.com/KevinMind/lerna-monorepo-starter/compare/add@3.0.0...add@3.1.0) (2019-12-05)
+
+
+### Features
+
+* **server:** enable query based addition with ?add=<value> ([3b83d9e](https://github.com/KevinMind/lerna-monorepo-starter/commit/3b83d9e7a4456ebeb8442ecf416e2afba0be999d))
+
+
+
+
+
 # [3.0.0](https://github.com/KevinMind/lerna-monorepo-starter/compare/add@2.1.0...add@3.0.0) (2019-12-05)
 
 
