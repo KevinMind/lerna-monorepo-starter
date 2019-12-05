@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.1.0](https://github.com/KevinMind/lerna-monorepo-starter/compare/run@2.0.9...run@2.1.0) (2019-12-05)
+
+
+### Features
+
+* **.:** update fixes ([4641470](https://github.com/KevinMind/lerna-monorepo-starter/commit/4641470938bde427e3521ec7ac09ea6e3682ac1f))
+
+
+
+
+
 ## [2.0.9](https://github.com/KevinMind/lerna-monorepo-starter/compare/run@2.0.8...run@2.0.9) (2019-12-05)
 
 **Note:** Version bump only for package run

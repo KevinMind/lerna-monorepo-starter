@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [3.1.0](https://github.com/KevinMind/lerna-monorepo-starter/compare/log@3.0.3...log@3.1.0) (2019-12-05)
+
+
+### Features
+
+* **.:** update fixes ([4641470](https://github.com/KevinMind/lerna-monorepo-starter/commit/4641470938bde427e3521ec7ac09ea6e3682ac1f))
+
+
+
+
+
 ## [3.0.3](https://github.com/KevinMind/lerna-monorepo-starter/compare/log@3.0.2...log@3.0.3) (2019-12-05)
 
 **Note:** Version bump only for package log
