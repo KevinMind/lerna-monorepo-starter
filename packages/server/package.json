@@ -1,6 +1,6 @@
 {
   "name": "server",
-  "version": "1.1.4",
+  "version": "1.1.5",
   "description": "node.js server 1",
   "author": "kmeinhardt <kevin.meinhardt@smava.de>",
   "homepage": "https://github.com/KevinMind/micro-poc#readme",
@@ -20,7 +20,7 @@
   },
   "dependencies": {
     "@babel/core": "^7.4.5",
-    "add": "^3.3.0",
+    "add": "^3.3.1",
     "axios": "^0.19.0",
     "express": "^4.17.1",
     "jsdom": "^15.1.1",
