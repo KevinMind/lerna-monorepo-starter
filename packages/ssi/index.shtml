@@ -1,0 +1,9 @@
+<html>
+<body>
+<!--#echo var="DATE_LOCAL" -->
+<div>
+  standard Text
+</div>
+<!--#include file="external.html"-->
+</body>
+</html>

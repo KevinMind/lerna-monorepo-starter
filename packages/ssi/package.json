@@ -1,0 +1,19 @@
+{
+  "name": "ssi",
+  "version": "1.0.0",
+  "private": true,
+  "description": "> TODO: description",
+  "author": "kevinmeinhardt <kevin.meinhardt@smava.de>",
+  "homepage": "https://github.com/KevinMind/lerna-monorepo-starter#readme",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KevinMind/lerna-monorepo-starter.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: run tests from root\" && exit 1"
+  },
+  "bugs": {
+    "url": "https://github.com/KevinMind/lerna-monorepo-starter/issues"
+  }
+}
