@@ -8,7 +8,7 @@ app.use('', (req, res) => res.json({ result: add(parseInt(req.query.add, 10) || 
 
 app.listen(3000, err => {
   if (err) {
-    return console.log('error starting app', err);
+    return console.log('error encountered starting app', err);
   }
   return console.log('started app on port', 3000);
 });

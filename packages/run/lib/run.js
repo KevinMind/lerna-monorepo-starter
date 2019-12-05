@@ -8,7 +8,7 @@ module.exports = run;
 
 function run() {
   const random = _.random(0, 10);
-  log('adding random(', random, ')');
+  log('sum of random(', random, ')');
   const result = add(random);
   log('result: ', result);
 }
