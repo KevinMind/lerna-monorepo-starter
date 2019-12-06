@@ -11,8 +11,8 @@
     "url": "git+https://github.com/KevinMind/lerna-monorepo-starter.git"
   },
   "scripts": {
-    "build": "rollup -c --environment NODEV_ENV:production",
-    "start": "rollup -c -w --environment NODE_ENV:development",
+    "build": "node_modules/.bin/rollup -c --environment NODEV_ENV:production",
+    "start": "node_modules/.bin/rollup -c -w --environment NODE_ENV:development",
     "test": "echo \"Error: run tests from root\" && exit 1"
   },
   "bugs": {

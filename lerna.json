@@ -11,7 +11,8 @@
   "npmClient": "yarn",
   "packages": [
     "packages/*",
-    "web/*"
+    "web/*",
+    "server/*"
   ],
   "version": "independent",
   "useWorkspaces": true,

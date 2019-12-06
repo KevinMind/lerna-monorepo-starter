@@ -4,7 +4,7 @@ import html from 'rollup-plugin-html';
 import resolve from 'rollup-plugin-node-resolve';
 
 let pkg = require('./package.json');
-let external = Object.keys(pkg.dependencies);
+let external = Object.keys(pkg.dependencies || {});
 
 let plugins = [
   babel(),

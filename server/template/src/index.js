@@ -1,7 +1,7 @@
 import  http from 'http';
 import  Tailor from 'node-tailor';
 
-import indexTemplate from './templates/index';
+import indexTemplate from './templates';
 import NotFoundTemplate from './templates/404.html';
 import bananaTemplate from './templates/banana';
 
