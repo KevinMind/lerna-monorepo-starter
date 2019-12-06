@@ -6,7 +6,7 @@ http
     if (req.url === '/script.js') {
       res.setHeader('Content-Type', 'application/javascript');
       return res.end(
-        'c=!setInterval(\'document.getElementById("c").innerHTML=c++;\', 1e3)'
+        `console.log('vanilla javascript app');`
       );
     }
 
@@ -19,15 +19,30 @@ http
     // Every Fragment sends a link header that describes its resources - css and js
     const css = '<http://localhost:8081/styles.css>; rel="stylesheet"';
     // this will be fetched using require-js as an amd module
-    const js = '<http://localhost:8081/script.js>; rel="fragment-script"';
+    const js = '<http://localhost:8081/script.js>; rel="buildFragment-script"';
 
     res.writeHead(200, {
       Link: `${css}, ${js}`,
       'Content-Type': 'text/html'
     });
 
-    // fragment content
-    res.end('<div>Fragment 1: <span id="c">-1</span>s elapsed</div>');
+    if (req.url === '/root') {
+      return res.end(`
+      <!DOCTYPE html>
+      <html>
+      <head>
+        <link href="http://localhost:8081/styles.css" rel="stylesheet" />
+      </head>
+      <body>
+        <div>Fragment 1: vanilla javascript app</div>
+        <script src="http://localhost:8081/script.js" rel="script"></script>
+      </body>
+      </html>
+      `);
+    }
+
+    // buildFragment content
+    res.end('<div>Fragment 1: vanilla javascript app</div>');
   })
   .listen(8081, function() {
     console.log('Fragment Server listening on port 8081');
