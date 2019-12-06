@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.1.0](https://github.com/KevinMind/lerna-monorepo-starter/compare/fragment@2.0.0...fragment@2.1.0) (2019-12-06)
+
+
+### Features
+
+* **.:** move web to separate folder ([cc32747](https://github.com/KevinMind/lerna-monorepo-starter/commit/cc32747097dcb86b97c7bbfda099918d87c12d9b))
+
+
+
+
+
 # [2.0.0](https://github.com/KevinMind/lerna-monorepo-starter/compare/fragment@1.1.0...fragment@2.0.0) (2019-12-06)
 
 

@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.4.0](https://github.com/KevinMind/micro-poc/compare/server@1.3.0...server@1.4.0) (2019-12-06)
+
+
+### Features
+
+* **.:** move web to separate folder ([cc32747](https://github.com/KevinMind/micro-poc/commit/cc32747097dcb86b97c7bbfda099918d87c12d9b))
+
+
+
+
+
 # [1.3.0](https://github.com/KevinMind/micro-poc/compare/server@1.2.1...server@1.3.0) (2019-12-05)
 
 
