@@ -3,7 +3,7 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
-# [2.0.0](https://github.com/KevinMind/lerna-monorepo-starter/compare/fragment@1.1.0...fragment@2.0.0) (2019-12-06)
+# 1.0.0 (2019-12-06)
 
 
 ### Features
@@ -14,14 +14,3 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 ### BREAKING CHANGES
 
 * **.:** something
-
-
-
-
-
-# 1.1.0 (2019-12-05)
-
-
-### Features
-
-* **. & fragment & template:** implement tailor layout engine ([3bb294f](https://github.com/KevinMind/lerna-monorepo-starter/commit/3bb294fad49b25790735384f271c7ca2e261b16d))
