@@ -2,6 +2,7 @@ import buildFragment from '../buildFragment';
 
 const javascriptApp = buildFragment({ baseUrl: 'http://localhost', port: 8081 });
 const razzleApp = buildFragment({ baseUrl: 'http://localhost', port: 3000 });
+const reactAppSimple = buildFragment({ baseUrl: 'http://localhost', port: 9000 });
 
 export default () => `
 <!-- Tailor needs an index.html -->
@@ -13,6 +14,6 @@ ${javascriptApp({ fragmentId: 'vanilla-app' })}
 </div>
 <div>
   <h2>fragment 1</h2>
-  ${razzleApp({ fragmentId: 'razzle-app-two' })}
+  ${reactAppSimple({ fragmentId: 'react-app' })}
 </div>
 `;

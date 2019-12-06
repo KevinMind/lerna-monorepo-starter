@@ -10,7 +10,8 @@
   },
   "npmClient": "yarn",
   "packages": [
-    "packages/*"
+    "packages/*",
+    "web/*"
   ],
   "version": "independent",
   "useWorkspaces": true,

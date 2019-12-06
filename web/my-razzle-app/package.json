@@ -2,10 +2,11 @@
   "name": "my-razzle-app",
   "version": "1.0.0",
   "license": "MIT",
+  "private": true,
   "scripts": {
-    "start": "razzle start",
-    "build": "razzle build",
-    "test": "razzle test --env=jsdom",
+    "start": "node_modules/.bin/razzle start",
+    "build": "node_modules/.bin/razzle build",
+    "test": "node_modules/.bin/razzle test --env=jsdom",
     "start:prod": "NODE_ENV=production node build/server.js"
   },
   "dependencies": {

@@ -24,7 +24,8 @@
   },
   "private": true,
   "workspaces": [
-    "packages/*"
+    "packages/*",
+    "web/*"
   ],
   "config": {
     "commitizen": {
