@@ -3,6 +3,19 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.5.0](https://github.com/KevinMind/micro-poc/compare/server@1.4.0...server@1.5.0) (2019-12-07)
+
+
+### Features
+
+* **.:** create server root package folder ([99abe40](https://github.com/KevinMind/micro-poc/commit/99abe40bf69600925927fda896ed38c7c1d0df94))
+* **fragment-server:** initial implementation of frag server ([07f66ce](https://github.com/KevinMind/micro-poc/commit/07f66ce624febeb5a4d41474ef3cd1cd18b8918a))
+* **react-simple:** use fragment-server ([8d73bd2](https://github.com/KevinMind/micro-poc/commit/8d73bd2a4a92574b1f746eca5131187d888a1159))
+
+
+
+
+
 # [1.4.0](https://github.com/KevinMind/micro-poc/compare/server@1.3.0...server@1.4.0) (2019-12-06)
 
 
