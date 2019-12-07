@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.2.0](https://github.com/KevinMind/lerna-monorepo-starter/compare/template@2.1.0...template@2.2.0) (2019-12-07)
+
+
+### Features
+
+* **.:** create server root package folder ([99abe40](https://github.com/KevinMind/lerna-monorepo-starter/commit/99abe40bf69600925927fda896ed38c7c1d0df94))
+* **fragment-server:** initial implementation of frag server ([07f66ce](https://github.com/KevinMind/lerna-monorepo-starter/commit/07f66ce624febeb5a4d41474ef3cd1cd18b8918a))
+
+
+
+
+
 # [2.1.0](https://github.com/KevinMind/lerna-monorepo-starter/compare/template@2.0.0...template@2.1.0) (2019-12-06)
 
 

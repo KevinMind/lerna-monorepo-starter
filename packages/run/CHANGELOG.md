@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.4.0](https://github.com/KevinMind/lerna-monorepo-starter/compare/run@2.3.0...run@2.4.0) (2019-12-07)
+
+
+### Features
+
+* **fragment-server:** initial implementation of frag server ([07f66ce](https://github.com/KevinMind/lerna-monorepo-starter/commit/07f66ce624febeb5a4d41474ef3cd1cd18b8918a))
+
+
+
+
+
 # [2.3.0](https://github.com/KevinMind/lerna-monorepo-starter/compare/run@2.2.0...run@2.3.0) (2019-12-05)
 
 
