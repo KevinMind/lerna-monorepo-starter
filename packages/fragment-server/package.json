@@ -19,6 +19,8 @@
     "url": "git+https://github.com/KevinMind/lerna-monorepo-starter.git"
   },
   "scripts": {
+    "build": "node_modules/.bin/rollup -c --environment NODEV_ENV:production",
+    "start": "node_modules/.bin/rollup -c -w --environment NODE_ENV:development",
     "test": "echo \"Error: run tests from root\" && exit 1"
   },
   "bugs": {
@@ -26,7 +28,7 @@
   },
   "devDependencies": {
     "@babel/core": "^7.4.5",
-    "@babel/plugin-syntax-dynamic-import": "^7.2.0",
+    "@babel/plugin-syntax-dynamic-import": "^7.7.4",
     "rollup": "^1.14.4",
     "rollup-plugin-babel": "^4.3.2",
     "rollup-plugin-html": "^0.2.1",
@@ -35,6 +37,8 @@
     "rollup-watch": "^4.3.1"
   },
   "dependencies": {
-    "express": "^4.17.1"
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "lodash": "^4.17.15"
   }
 }
