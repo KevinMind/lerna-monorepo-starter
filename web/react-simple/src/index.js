@@ -12,7 +12,7 @@ const newServer = fragmentServer({
   STATIC_PATH,
   appRoot: 'root',
   getMarkup,
-  getAssets: () => assets,
+  getAssets: () => Promise.resolve(assets),
 });
 
 newServer.start();

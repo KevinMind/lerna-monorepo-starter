@@ -1,6 +1,6 @@
 import FragmentServer from './server';
 
-const getAssets = () => {
+const getAssets = async () => {
   return {
     client: {
       css: '',

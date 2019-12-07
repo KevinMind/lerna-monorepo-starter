@@ -31,21 +31,22 @@ const getHtmlHead = ({ client: { css, js, title } }) => {
   `;
 };
 
-export const renderApp = ({ getMarkup, getAssets, appRoot }) => (req, res) => {
+export const renderApp = ({ getMarkup, getAssets, appRoot }) => async (req, res) => {
+  const assets = await getAssets(req);
   return res.end(
     getHtmlDoc(
       `
-        ${getHtmlHead(getAssets(req))}
+        ${getHtmlHead(assets)}
         ${getHtmlRoot(appRoot, getMarkup(req))}
         `
     )
   );
 };
 
-export const renderFrag = ({ getAssets, getMarkup }) => (req, res) => {
+export const renderFrag = ({ getAssets, getMarkup }) => async (req, res) => {
   const { fragmentId } = req.params;
   const isProd = process.env.NODE_ENV === 'production';
-  const assets = getAssets(req);
+  const assets = await getAssets(req);
 
   const cssPath = isProd ? `http://localhost:3000${assets.client.css}`: assets.client.css;
   const jsPath = isProd ? `http://localhost:3000${assets.client.js}`: assets.client.js;
