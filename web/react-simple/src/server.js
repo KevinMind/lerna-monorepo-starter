@@ -3,10 +3,10 @@ import React from 'react';
 import express from 'express';
 import { renderToString } from 'react-dom/server';
 
-const assets = require(process.env.RAZZLE_ASSETS_MANIFEST);
+export const assets = require(process.env.RAZZLE_ASSETS_MANIFEST);
 // const fragmentId = process.env.FRAGMENT_ID;
 
-const getMarkup = () => {
+export const getMarkup = () => {
   return renderToString(
     <App />
   );

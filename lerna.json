@@ -1,11 +1,11 @@
 {
   "command": {
     "bootstrap": {
+      "registry": "http://localhost:4873"
     },
     "publish": {
       "conventionalCommits": true,
       "registry": "http://localhost:4873"
-
     }
   },
   "npmClient": "yarn",
