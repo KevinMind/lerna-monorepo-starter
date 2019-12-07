@@ -1,7 +1,6 @@
 {
   "name": "fragment-server",
   "version": "1.0.0",
-  "private": true,
   "description": "> TODO: description",
   "author": "kevinmeinhardt <kevin.meinhardt@smava.de>",
   "homepage": "https://github.com/KevinMind/lerna-monorepo-starter#readme",
