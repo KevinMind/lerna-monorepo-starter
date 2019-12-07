@@ -30,4 +30,15 @@ const config = {
   external
 };
 
-export default config;
+const exampleConfig = {
+  input: './src/example.js',
+  output: {
+    dir: 'example',
+    format: 'cjs',
+    sourceMap: true
+  },
+  plugins,
+  external
+};
+
+export default [config, exampleConfig];

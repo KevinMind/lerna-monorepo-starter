@@ -12,9 +12,7 @@ const getAssets = () => {
 
 const getMarkup = () => '<div>testcontent</div>';
 
-export default (exampleEnv) => {
-  const app = FragmentServer({ ...exampleEnv, getAssets, getMarkup, appRoot: 'root' });
-  app.start();
-}
+const app = FragmentServer({ ...process.env, getAssets, getMarkup, appRoot: 'root' });
+app.start();
 
 
