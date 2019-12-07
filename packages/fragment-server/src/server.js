@@ -4,12 +4,17 @@ import express from 'express';
 import { pick } from 'lodash';
 import path from 'path';
 
+import { renderApp, renderFrag } from './render';
+
 const CONFIG_KEYS = {
   PORT: 'PORT',
   STATIC_PATH: 'STATIC_PATH',
   ROOT_PATH: 'ROOT_PATH',
   FRAG_PATH: 'FRAG_PATH',
-  BUILD_FOLDER: 'BUILD_FOLDER'
+  BUILD_FOLDER: 'BUILD_FOLDER',
+  getAssets: 'getAssets',
+  getMarkup: 'getMarkup',
+  appRoot: 'appRoot',
 };
 
 const DEFAULT_CONFIG = {
@@ -18,6 +23,9 @@ const DEFAULT_CONFIG = {
   [CONFIG_KEYS.ROOT_PATH]: '/root',
   [CONFIG_KEYS.FRAG_PATH]: '/',
   [CONFIG_KEYS.BUILD_FOLDER]: path.resolve(__dirname, 'build'),
+  [CONFIG_KEYS.getAssets]: () => {},
+  [CONFIG_KEYS.getMarkup]: () => {},
+  [CONFIG_KEYS.appRoot]: 'root'
 };
 
 const startServer = app => config => {
@@ -46,24 +54,19 @@ const serveStatic = app => config => {
 
 const serveFragment = app => config => {
   // serve micro frontend
-  app.use(`${config.FRAG_PATH}/:fragmentId`, (req, res) => {
-    const { fragmentId } = req.params;
-    res.json({ fragmentId });
-  });
+  app.use(`${config.FRAG_PATH}/:fragmentId`, renderFrag(config));
   console.log(`serving fragment at url ${config.FRAG_PATH}/:fragmentId`);
   return app;
 };
 
 const serveApp = app => config => {
-  // serve client root
-  app.use(config.ROOT_PATH, (req, res) => {
-    res.json({ root: true });
-  });
+  app.use(config.ROOT_PATH, renderApp(config));
+  console.log(`serving app at url ${config.ROOT_PATH}`);
   return app;
 };
 
 const getPropError = name => {
-  throw new Error(`missing or invalid prop ${name} provided to config.`);
+  throw new Error(`missing or invalid prop '${name}' provided to config.`);
 };
 
 const validateEnv = config => {
@@ -81,10 +84,18 @@ const validateEnv = config => {
   if (typeof config.ROOT_PATH === undefined) {
     return getPropError('ROOT_PATH');
   }
+  if (!config.getAssets || typeof config.getAssets !== 'function') {
+    return getPropError('getAssets');
+  }
+  if (!config.getMarkup || typeof config.getMarkup !== 'function') {
+    return getPropError('getMarkup');
+  }
+  if (!config.appRoot) {
+    return getPropError('appRoot');
+  }
 };
 
 export default (rawConfig) => {
-
   const config = pick(rawConfig, Object.keys(CONFIG_KEYS));
   validateEnv(config);
 
