@@ -1,6 +1,6 @@
 import log from 'log';
 
-const add_base = 50;
+const add_base = 10;
 
 export default function index(x) {
   const result = x + add_base;

@@ -1,12 +1,18 @@
 import React, { Fragment, useState, useEffect } from 'react';
 
+const getCount = after => async add => {
+  const response = await fetch(`http://localhost:3054?add=${add}`);
+  const { result } = await response.json();
+
+  after(result);
+};
+
 const App = () => {
   const [count, setCount] = useState(0);
 
   useEffect(() => {
     const int = setInterval(() => {
-      const newCount = count + 2;
-      setCount(newCount);
+      getCount(setCount)(count);
     }, 1000);
 
     return () => clearInterval(int);
