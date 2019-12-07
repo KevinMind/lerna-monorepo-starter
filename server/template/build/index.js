@@ -82,13 +82,57 @@ var bananaTemplate = (() => `
 </div>
 `);
 
+const javascriptApp$2 = buildFragment({
+  baseUrl: 'http://localhost',
+  port: 8081
+});
+const razzleApp$1 = buildFragment({
+  baseUrl: 'http://localhost',
+  port: 3000
+});
+const reactAppSimple$1 = buildFragment({
+  baseUrl: 'http://localhost',
+  port: 9000
+});
+const vueApp = buildFragment({
+  baseUrl: 'http://localhost',
+  port: 6060
+});
+var vueTemplate = (() => `
+<!-- Tailor needs an index.html -->
+<h1>Basic css and js</h1>
+${javascriptApp$2({
+  fragmentId: 'vanilla-app'
+})}
+<div>
+  <h2>fragment 1</h2>
+  ${razzleApp$1({
+  fragmentId: 'razzle-app'
+})}
+</div>
+<div>
+  <h2>fragment 1</h2>
+  ${reactAppSimple$1({
+  fragmentId: 'react-app'
+})}
+</div>
+<div>
+  <h2>fragment 3</h2>
+  ${vueApp({
+  fragmentId: 'vue-app'
+})}
+</div>
+`);
+
 const TEMPLATE_KEYS = {
   index: '',
-  banana: 'banana'
+  banana: 'banana',
+  vue: 'vue'
 };
 const TEMPLATES = {
   [TEMPLATE_KEYS.index]: indexTemplate,
-  [TEMPLATE_KEYS.banana]: bananaTemplate
+  [TEMPLATE_KEYS.banana]: bananaTemplate,
+  [TEMPLATE_KEYS.vue]: vueTemplate
 };
 
 const fetchTemplate = async (request, parseTemplate) => {

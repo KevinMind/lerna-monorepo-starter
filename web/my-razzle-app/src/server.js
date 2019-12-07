@@ -4,7 +4,7 @@ import { renderToString } from 'react-dom/server';
 
 export const assets = require(process.env.RAZZLE_ASSETS_MANIFEST);
 
-export const getMarkup = () => {
+export const getMarkup = async () => {
   return renderToString(
     <App />
   );

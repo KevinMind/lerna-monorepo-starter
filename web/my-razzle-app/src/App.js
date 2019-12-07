@@ -1,4 +1,5 @@
 import React, { Fragment, useState, useEffect } from 'react';
+import image from './razzle.png';
 
 const getCount = after => async add => {
   const response = await fetch(`http://localhost:3054?add=${add}`);
@@ -21,6 +22,7 @@ const App = () => {
     <Fragment>
       <div>
         hello react {count}
+        <img src={image} />
       </div>
     </Fragment>
   );

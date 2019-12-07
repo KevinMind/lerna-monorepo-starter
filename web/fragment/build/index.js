@@ -19,6 +19,10 @@ const assets = {
     title: 'vanilla-js'
   }
 };
+const app = `
+<div>Fragment 1: vanilla javascript app</div>
+<img src="http://localhost:8081/static/javascript.png" />
+`;
 const server = fragmentServer({
   BUILD_FOLDER,
   FRAG_PATH,
@@ -26,7 +30,7 @@ const server = fragmentServer({
   ROOT_PATH,
   STATIC_PATH,
   appRoot: 'root',
-  getMarkup: () => '<div>Fragment 1: vanilla javascript app</div>',
+  getMarkup: () => Promise.resolve(app),
   getAssets: () => Promise.resolve(assets)
 });
 server.start();

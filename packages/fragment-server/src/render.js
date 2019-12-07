@@ -33,11 +33,12 @@ const getHtmlHead = ({ client: { css, js, title } }) => {
 
 export const renderApp = ({ getMarkup, getAssets, appRoot }) => async (req, res) => {
   const assets = await getAssets(req);
+  const markup = await getMarkup(req);
   return res.end(
     getHtmlDoc(
       `
         ${getHtmlHead(assets)}
-        ${getHtmlRoot(appRoot, getMarkup(req))}
+        ${getHtmlRoot(appRoot, markup)}
         `
     )
   );
@@ -59,7 +60,8 @@ export const renderFrag = ({ getAssets, getMarkup }) => async (req, res) => {
     Link: `${css}, ${js}`,
     'Content-Type': 'text/html'
   });
-  const markup = getMarkup(req);
+
+  const markup = await getMarkup(req);
   return res.end(getHtmlDoc(getHtmlRoot(fragmentId, markup)));
 
 };

@@ -6,6 +6,7 @@
         alt="Vue"
       >
       <h1>{{ greeting }}</h1>
+      <button v-on:click="say('what')">Say what</button>
     </section>
   </div>
 </template>
@@ -15,6 +16,11 @@ export default {
   data() {
     return {
       greeting: 'Hello Vue!'
+    }
+  },
+  methods: {
+    say: function (message) {
+      alert(message)
     }
   }
 }

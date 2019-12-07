@@ -14,6 +14,7 @@ let plugins = [
   resolve(),
   copy({
     targets: [
+      { src: 'src/javascript.png', dest: 'build' },
       { src: 'src/static.js', dest: 'build' },
       { src: 'src/styles.css', dest: 'build' }
     ]

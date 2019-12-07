@@ -1,4 +1,5 @@
 import React, { Fragment, useState, useEffect } from 'react';
+import image from './react.svg';
 
 const App = () => {
   const [count, setCount] = useState(0);
@@ -14,6 +15,7 @@ const App = () => {
   return (
     <Fragment>
       <div>
+        <img src={image} />
         hello react {count}
       </div>
     </Fragment>
