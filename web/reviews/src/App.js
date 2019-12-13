@@ -1,5 +1,5 @@
 import React, { Fragment, useState, useEffect } from 'react';
-import image from './razzle.png';
+import { Button } from "@smava-ui/core";
 
 const getCount = after => async add => {
   const response = await fetch(`http://localhost:3054?add=${add}`);
@@ -21,8 +21,8 @@ const App = () => {
   return (
     <Fragment>
       <div>
+        <Button onClick={() => postMessage(`count is ${count}`)}>Click Me</Button>
         hello react {count}
-        <img src={image} />
       </div>
     </Fragment>
   );

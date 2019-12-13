@@ -3,22 +3,13 @@ import  Tailor from 'node-tailor';
 
 import indexTemplate from './templates';
 import NotFoundTemplate from './templates/404.html';
-import bananaTemplate from './templates/banana';
-import vueTemplate from './templates/vue';
-import testTemplate from './templates/test';
 
 const TEMPLATE_KEYS = {
   index: '',
-  banana: 'banana',
-  vue: 'vue',
-  test: 'test',
 };
 
 const TEMPLATES = {
   [TEMPLATE_KEYS.index]: indexTemplate,
-  [TEMPLATE_KEYS.banana]: bananaTemplate,
-  [TEMPLATE_KEYS.vue]: vueTemplate,
-  [TEMPLATE_KEYS.test]: testTemplate,
 };
 
 const fetchTemplate = async (request, parseTemplate) => {

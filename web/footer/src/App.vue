@@ -1,13 +1,22 @@
 <template>
-  <div class="app">
+  <div class="app" id="root">
     <section>
       <img
         src="./vue.svg"
         alt="Vue"
       >
-      <h1>{{ greeting }}</h1>
-      <button v-on:click="say('what')">Say what</button>
     </section>
+    <footer class="main">
+      <div>
+        <h1>{{ greeting }}</h1>
+      </div>
+      <div>
+        <button v-on:click="say('what')">Say what</button>
+      </div>
+      <div>
+        Hello footer
+      </div>
+    </footer>
   </div>
 </template>
 
@@ -39,4 +48,8 @@ export default {
     margin: 0 auto;
     display: block;
   }
+  /*.app {*/
+  /*  background: white;*/
+  /*  padding: 0;*/
+  /*}*/
 </style>

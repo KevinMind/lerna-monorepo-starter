@@ -27,6 +27,6 @@
   },
   "homepage": "https://github.com/KevinMind/lerna-monorepo-starter#readme",
   "dependencies": {
-    "@smava-packages/log": "^3.3.0"
+    "@smava-packages/log": "3.3.0"
   }
 }

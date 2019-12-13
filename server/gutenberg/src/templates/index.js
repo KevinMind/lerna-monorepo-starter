@@ -1,28 +1,40 @@
-import { fragment, myRazzleApp, reactSimple } from "../clients";
+import styles from '../assets/styles.css';
+import { Header, Reviews, MessageBus } from "../clients";
 
 export default () => `
-<!-- Tailor needs an index.html -->
+<!DOCTYPE html>
+<html>
+<head>
 <style>
-img {
-  width: 200px;
-}
-body {
-  background: blue;
-  color: white;
-}      
+${styles}
 </style>
-<h1>Basic css and js</h1>
-<div>
-  <h2>Pure Javascript App (no framework)</h2>
-  ${fragment({ fragmentId: 'vanilla-app' })}
+</head>
+<body>
+${MessageBus({
+  isAsync: true,
+  fragmentId: 'message-bus'
+})}
+<div class="header flex">
+${Header({
+  isAsync: false,
+  isPublic: false,
+  fragmentId: 'header'
+})}
 </div>
-
-<div>
-  <h2>React Razzle App</h2>
-  ${myRazzleApp({ fragmentId: 'razzle-app' })}
+<div class="body flex">
+  <div class="left">left</div>
+  <div class="middle">
+  ${Reviews({
+    isAsync: true,
+    isPublic: false,
+    fragmentId: 'reviews'
+  })}
+  </div>
+  <div class="right">right</div>
 </div>
-<div>
-  <h2>Simple React App</h2>
-  ${reactSimple({ fragmentId: 'react-app' })}
+<div class="footer flex">
+footer
 </div>
+</body>
+</html>
 `;

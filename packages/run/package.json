@@ -24,8 +24,8 @@
     "url": "https://github.com/KevinMind/lerna-monorepo-starter/issues"
   },
   "dependencies": {
-    "@smava-packages/add": "3.4.0",
-    "@smava-packages/log": "^3.3.0",
+    "@smava-packages/add": "3.6.0",
+    "@smava-packages/log": "3.3.0",
     "lodash": "^4.17.15"
   }
 }

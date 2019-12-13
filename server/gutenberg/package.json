@@ -19,7 +19,9 @@
     "url": "https://github.com/KevinMind/lerna-monorepo-starter/issues"
   },
   "dependencies": {
-    "node-tailor": "^3.9.2"
+    "node-tailor": "^3.9.2",
+    "reset-css": "^5.0.1",
+    "rollup-plugin-postcss": "^2.0.3"
   },
   "devDependencies": {
     "@babel/core": "^7.4.5",

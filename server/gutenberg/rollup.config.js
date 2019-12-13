@@ -3,6 +3,8 @@ import copy from 'rollup-plugin-copy';
 import run from 'rollup-plugin-run';
 import html from 'rollup-plugin-html';
 import resolve from 'rollup-plugin-node-resolve';
+import postcss from 'rollup-plugin-postcss';
+
 
 let pkg = require('./package.json');
 let external = Object.keys(pkg.dependencies);
@@ -15,6 +17,9 @@ let plugins = [
     targets: [
       { src: 'src/templates', dest: 'build' },
     ]
+  }),
+  postcss({
+    extensions: ['.css']
   })
 ];
 

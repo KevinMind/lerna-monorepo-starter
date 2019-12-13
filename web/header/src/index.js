@@ -1,10 +1,9 @@
-require('dotenv').config();
-import fragmentServer from '@smava-packages/fragment-server';
-import { getMarkup, assets } from "./server";
+import FragmentServer from '@smava-packages/fragment-server';
 
 const { PORT, BUILD_FOLDER, FRAG_PATH, ROOT_PATH, STATIC_PATH } = process.env;
+import { assets, getMarkup } from "./server";
 
-const newServer = fragmentServer({
+const server = FragmentServer({
   BUILD_FOLDER,
   FRAG_PATH,
   PORT,
@@ -13,9 +12,9 @@ const newServer = fragmentServer({
   appRoot: 'root',
   getMarkup,
   getAssets: async () => {
-    assets.client.title = 'reviews';
+    assets.client.title = 'header';
     return assets;
   },
 });
 
-newServer.start();
+server.start();

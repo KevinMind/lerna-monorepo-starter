@@ -1,7 +1,7 @@
 import express from 'express';
 import cors from 'cors';
 
-import add from 'add';
+import add from '@smava-packages/add';
 
 const app = express();
 

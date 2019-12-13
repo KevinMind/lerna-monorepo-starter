@@ -1,6 +1,6 @@
 const getHtmlRoot = (fragmentId, body) => {
   return `
-  <div id="${fragmentId}">
+  <div id="${fragmentId}" style="width:100%;">
       ${body}
     </div>
   `;
@@ -14,11 +14,23 @@ const getHtmlDoc = (content) => {
     </html>`;
 };
 
-const getHtmlHead = ({ client: { css, js, title } }) => {
+const getHtmlHead = ({ client: { css, js, title } }, fragmentId) => {
   return `
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta charset="utf-8" />
   <title>${title}</title>
+  <style>
+  body {
+    padding: 10px;
+    background: grey;
+  }
+  ${fragmentId && `
+    #${fragmentId} {
+      background: white;
+      box-shadow: 2px 2px 10px 2px #0000005e;
+    }
+  `}
+  </style>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   ${css
     ? ` <link rel="stylesheet" href="${css}">`
@@ -37,7 +49,7 @@ export const renderApp = ({ getMarkup, getAssets, appRoot }) => async (req, res)
   return res.end(
     getHtmlDoc(
       `
-        ${getHtmlHead(assets)}
+        ${getHtmlHead(assets, appRoot)}
         ${getHtmlRoot(appRoot, markup)}
         `
     )

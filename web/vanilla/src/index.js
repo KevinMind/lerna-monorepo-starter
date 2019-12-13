@@ -1,5 +1,5 @@
 require('dotenv').config();
-import fragmentServer from 'fragment-server';
+import fragmentServer from '@smava-packages/fragment-server';
 
 const { PORT, BUILD_FOLDER, FRAG_PATH, ROOT_PATH, STATIC_PATH } = process.env;
 
@@ -11,11 +11,6 @@ const assets = {
   }
 };
 
-const app =`
-<div>Fragment 1: vanilla javascript app</div>
-<img src="http://localhost:5050/static/javascript.png" />
-`;
-
 const server = fragmentServer({
   BUILD_FOLDER,
   FRAG_PATH,
@@ -23,7 +18,7 @@ const server = fragmentServer({
   ROOT_PATH,
   STATIC_PATH,
   appRoot: 'root',
-  getMarkup: () => Promise.resolve(app),
+  getMarkup: () => Promise.resolve(''),
   getAssets: () => Promise.resolve(assets),
 });
 
