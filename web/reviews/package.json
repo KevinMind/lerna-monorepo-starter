@@ -1,0 +1,20 @@
+{
+  "name": "@smava-web/reviews",
+  "version": "1.1.0",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "start": "node_modules/.bin/razzle start",
+    "build": "node_modules/.bin/razzle build",
+    "test": "node_modules/.bin/razzle test --env=jsdom",
+    "start:prod": "NODE_ENV=production node build/server.js"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "razzle": "^3.0.0",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0",
+    "react-router-dom": "^5.1.2",
+    "uuid": "^3.3.3"
+  }
+}

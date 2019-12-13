@@ -1,5 +1,5 @@
 {
-  "name": "add",
+  "name": "@smava-packages/add",
   "version": "3.6.0",
   "description": "Now I’m the model of a modern major general / The venerated Virginian veteran whose men are all / Lining up, to put me up on a pedestal / Writin’ letters to relatives / Embellishin’ my elegance and eloquence / But the elephant is in the room / The truth is in ya face when ya hear the British cannons go / BOOM",
   "repository": {
@@ -27,6 +27,6 @@
   },
   "homepage": "https://github.com/KevinMind/lerna-monorepo-starter#readme",
   "dependencies": {
-    "log": "^3.3.0"
+    "@smava-packages/log": "^3.3.0"
   }
 }

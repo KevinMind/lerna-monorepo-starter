@@ -1,5 +1,5 @@
 {
-  "name": "run",
+  "name": "@smava-packages/run",
   "version": "2.4.0",
   "description": "> TODO: description",
   "author": "kevinmeinhardt <kevin.meinhardt@smava.de>",
@@ -24,8 +24,8 @@
     "url": "https://github.com/KevinMind/lerna-monorepo-starter/issues"
   },
   "dependencies": {
-    "add": "3.4.0",
-    "lodash": "^4.17.15",
-    "log": "^3.3.0"
+    "@smava-packages/add": "3.4.0",
+    "@smava-packages/log": "^3.3.0",
+    "lodash": "^4.17.15"
   }
 }
