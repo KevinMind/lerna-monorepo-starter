@@ -1,6 +1,6 @@
 {
   "name": "@smava-web/notifications",
-  "version": "1.2.0",
+  "version": "2.0.0",
   "license": "MIT",
   "private": true,
   "scripts": {
@@ -10,7 +10,7 @@
     "start:prod": "NODE_ENV=production node build/server.js"
   },
   "dependencies": {
-    "@smava-packages/fragment-server": "^1.1.0",
+    "@smava-packages/fragment-server": "^2.0.0",
     "@smava-ui/core": "^9.4.2",
     "dotenv": "^8.2.0",
     "razzle": "^3.0.0",

@@ -3,6 +3,27 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# 3.0.0 (2019-12-13)
+
+
+### Features
+
+* **.:** rename packages with scoping ([471e5b9](https://github.com/KevinMind/lerna-monorepo-starter/commit/471e5b9852402156ae4828f59fe39a3d964c7b57))
+* **.:** update fixes ([4641470](https://github.com/KevinMind/lerna-monorepo-starter/commit/4641470938bde427e3521ec7ac09ea6e3682ac1f))
+* **.:** use different version of add util ([5a4d374](https://github.com/KevinMind/lerna-monorepo-starter/commit/5a4d37416d75aa5a1a5260b3ce9c43cbc0bf1633))
+* **.:** use different versions of add ([9640959](https://github.com/KevinMind/lerna-monorepo-starter/commit/9640959544eeddd20274ec9ddf7417ec2ea090eb))
+* **@smava-packages/add:** update add_base to 30 ([02570bf](https://github.com/KevinMind/lerna-monorepo-starter/commit/02570bfe84df2b2d4c539b5e061c09e5dd652ba5))
+* **fragment-server:** initial implementation of frag server ([07f66ce](https://github.com/KevinMind/lerna-monorepo-starter/commit/07f66ce624febeb5a4d41474ef3cd1cd18b8918a))
+
+
+### BREAKING CHANGES
+
+* **@smava-packages/add:** add function logic is different
+
+
+
+
+
 # [2.4.0](https://github.com/KevinMind/lerna-monorepo-starter/compare/run@2.3.0...run@2.4.0) (2019-12-07)
 
 

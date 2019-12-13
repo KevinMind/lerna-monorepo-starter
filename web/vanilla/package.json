@@ -1,6 +1,6 @@
 {
   "name": "@smava-web/vanilla",
-  "version": "2.2.0",
+  "version": "3.0.0",
   "private": true,
   "description": "> TODO: description",
   "author": "kevinmeinhardt <kevin.meinhardt@smava.de>",
@@ -30,7 +30,7 @@
     "rollup-watch": "^4.3.1"
   },
   "dependencies": {
-    "@smava-packages/fragment-server": "^1.1.0",
+    "@smava-packages/fragment-server": "^2.0.0",
     "@smava-ui/core": "^9.4.2",
     "dotenv": "^8.2.0"
   }

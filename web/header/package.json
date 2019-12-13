@@ -1,6 +1,6 @@
 {
   "name": "@smava-web/header",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "license": "MIT",
   "scripts": {
     "start": "razzle start",
@@ -9,7 +9,7 @@
     "start:prod": "NODE_ENV=production node build/server.js"
   },
   "dependencies": {
-    "@smava-packages/fragment-server": "^1.1.0",
+    "@smava-packages/fragment-server": "^2.0.0",
     "@smava-ui/core": "^9.4.2",
     "express": "^4.17.1",
     "razzle": "^3.0.0",
