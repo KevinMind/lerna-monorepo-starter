@@ -1,13 +1,13 @@
 0 silly argv {
 0 silly argv   _: [ 'add' ],
-0 silly argv   scope: '@smava-web/*',
+0 silly argv   scope: '@smava-web/offers',
 0 silly argv   globs: [],
 0 silly argv   lernaVersion: '3.19.0',
 0 silly argv   '$0': '/usr/local/bin/lerna',
-0 silly argv   pkg: '@smava-ui/core'
+0 silly argv   pkg: '@smava-packages/offer'
 0 silly argv }
 1 notice cli v3.19.0
 2 verbose rootPath /Users/kevinmeinhardt/Documents/code/personal/lerna-mono-starter
 3 info versioning independent
-4 error Error: 404 Not Found - GET https://registry.npmjs.org/@smava-ui%2fcore - Not found
+4 error Error: 404 Not Found - GET https://registry.npmjs.org/@smava-packages%2foffer - Not found
 4 error     at /Users/kevinmeinhardt/Documents/code/personal/lerna-mono-starter/node_modules/@evocateur/npm-registry-fetch/check-response.js:104:15

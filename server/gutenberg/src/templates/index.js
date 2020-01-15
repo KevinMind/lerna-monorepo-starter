@@ -1,5 +1,5 @@
 import styles from '../assets/styles.css';
-import { Header, Reviews, MessageBus } from "../clients";
+import { Footer, Header, Reviews, MessageBus } from "../clients";
 
 export default () => `
 <!DOCTYPE html>
@@ -33,7 +33,11 @@ ${Header({
   <div class="right">right</div>
 </div>
 <div class="footer flex">
-footer
+${Footer({
+  isAsync: false,
+  isPublic: false,
+  fragmentId: 'footer'
+})}
 </div>
 </body>
 </html>

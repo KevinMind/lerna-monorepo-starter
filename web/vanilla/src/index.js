@@ -18,7 +18,7 @@ const server = fragmentServer({
   ROOT_PATH,
   STATIC_PATH,
   appRoot: 'root',
-  getMarkup: () => Promise.resolve(''),
+  getMarkup: () => Promise.resolve('<div>hello vanilla javascript</div>'),
   getAssets: () => Promise.resolve(assets),
 });
 

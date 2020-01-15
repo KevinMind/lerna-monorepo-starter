@@ -15,7 +15,7 @@ const App = () => {
   return (
     <Fragment>
       <div>
-        <img src={image} />
+        <img src={image} width="50px" />
         hello react {count}
       </div>
     </Fragment>

@@ -51,17 +51,19 @@ table {
   width: 100%;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
 .header {
-   border: 1px solid green;
+  height: 6vh;
  }
 
 .body {
-  border: 1px solid blue;
+  background-color: rgb(57, 169, 73);
+  height: 70vh;
 }
 
 .footer {
-  border: 1px solid red;
+  background: #caa402;
+  height: 24vh;
 }

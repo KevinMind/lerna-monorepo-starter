@@ -1,10 +1,6 @@
 <template>
   <div class="app" id="root">
     <section>
-      <img
-        src="./vue.svg"
-        alt="Vue"
-      >
     </section>
     <footer class="main">
       <div>
@@ -24,7 +20,7 @@
 export default {
   data() {
     return {
-      greeting: 'Hello Vue!'
+      greeting: 'Hello Footer!'
     }
   },
   methods: {
@@ -48,8 +44,10 @@ export default {
     margin: 0 auto;
     display: block;
   }
-  /*.app {*/
-  /*  background: white;*/
-  /*  padding: 0;*/
-  /*}*/
+  .app {
+    width: 100%;
+    height: 100%;
+    background: white;
+    padding: 0;
+  }
 </style>
