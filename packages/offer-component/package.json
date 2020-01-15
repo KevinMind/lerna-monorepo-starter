@@ -6,7 +6,9 @@
   "scripts": {
     "build": "parcel build  src/index.js",
     "start": "parcel watch  src/index.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
   },
   "keywords": [],
   "author": "",
@@ -15,5 +17,13 @@
     "parcel": "^2.0.0-alpha.3.2",
     "react": "^16.12.0",
     "styled-components": "^5.0.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.8.3",
+    "@storybook/addon-actions": "^5.3.3",
+    "@storybook/addon-links": "^5.3.3",
+    "@storybook/addons": "^5.3.3",
+    "@storybook/react": "^5.3.3",
+    "babel-loader": "^8.0.6"
   }
 }

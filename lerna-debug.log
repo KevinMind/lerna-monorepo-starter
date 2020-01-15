@@ -9,5 +9,5 @@
 1 notice cli v3.19.0
 2 verbose rootPath /Users/kevinmeinhardt/Documents/code/personal/lerna-mono-starter
 3 info versioning independent
-4 error Error: 404 Not Found - GET https://registry.npmjs.org/@smava-packages%2foffer - Not found
+4 error Error: 404 Not Found - GET http://localhost:4873/@smava-packages%2foffer - no such package available
 4 error     at /Users/kevinmeinhardt/Documents/code/personal/lerna-mono-starter/node_modules/@evocateur/npm-registry-fetch/check-response.js:104:15

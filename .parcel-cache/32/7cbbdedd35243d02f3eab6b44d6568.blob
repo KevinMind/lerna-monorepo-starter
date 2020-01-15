@@ -1,0 +1,41 @@
+var $fbda7b08910887fa5073c5e5475594$exports = {};
+$parcel$require("50fbda7b08910887fa5073c5e5475594", "styled-components");
+
+function $fbda7b08910887fa5073c5e5475594$var$_templateObject3() {
+  var data = $fbda7b08910887fa5073c5e5475594$var$_taggedTemplateLiteral(["\n  border: 1px solid blue;\n  height: 50px;\n  width: auto;\n"]);
+
+  $fbda7b08910887fa5073c5e5475594$var$_templateObject3 = function _templateObject3() {
+    return data;
+  };
+
+  return data;
+}
+
+function $fbda7b08910887fa5073c5e5475594$var$_templateObject2() {
+  var data = $fbda7b08910887fa5073c5e5475594$var$_taggedTemplateLiteral(["\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  border: 1px solid blue;\n  flex-grow: 1;\n"]);
+
+  $fbda7b08910887fa5073c5e5475594$var$_templateObject2 = function _templateObject2() {
+    return data;
+  };
+
+  return data;
+}
+
+function $fbda7b08910887fa5073c5e5475594$var$_templateObject() {
+  var data = $fbda7b08910887fa5073c5e5475594$var$_taggedTemplateLiteral(["\n  border: 1px solid black;\n  display: flex;\n  justify-content: space-between;\n  align-items: stretch;\n"]);
+
+  $fbda7b08910887fa5073c5e5475594$var$_templateObject = function _templateObject() {
+    return data;
+  };
+
+  return data;
+}
+
+function $fbda7b08910887fa5073c5e5475594$var$_taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(0); } return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } })); }
+
+var $fbda7b08910887fa5073c5e5475594$export$Container = $fbda7b08910887fa5073c5e5475594$import$styled.div($fbda7b08910887fa5073c5e5475594$var$_templateObject());
+$fbda7b08910887fa5073c5e5475594$exports.Container = $fbda7b08910887fa5073c5e5475594$export$Container;
+var $fbda7b08910887fa5073c5e5475594$export$Section = $fbda7b08910887fa5073c5e5475594$import$styled.div($fbda7b08910887fa5073c5e5475594$var$_templateObject2());
+$fbda7b08910887fa5073c5e5475594$exports.Section = $fbda7b08910887fa5073c5e5475594$export$Section;
+var $fbda7b08910887fa5073c5e5475594$export$BankLogo = $fbda7b08910887fa5073c5e5475594$import$styled.img($fbda7b08910887fa5073c5e5475594$var$_templateObject3());
+$fbda7b08910887fa5073c5e5475594$exports.BankLogo = $fbda7b08910887fa5073c5e5475594$export$BankLogo;

@@ -1,0 +1,17 @@
+var $fbda7b08910887fa5073c5e5475594$exports = {};
+$parcel$require("50fbda7b08910887fa5073c5e5475594", "styled-components");
+
+function $fbda7b08910887fa5073c5e5475594$var$_templateObject() {
+  var data = $fbda7b08910887fa5073c5e5475594$var$_taggedTemplateLiteral(["\n  border: 1px solid black;\n"]);
+
+  $fbda7b08910887fa5073c5e5475594$var$_templateObject = function _templateObject() {
+    return data;
+  };
+
+  return data;
+}
+
+function $fbda7b08910887fa5073c5e5475594$var$_taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(0); } return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } })); }
+
+var $fbda7b08910887fa5073c5e5475594$export$Container = $fbda7b08910887fa5073c5e5475594$import$styled.div($fbda7b08910887fa5073c5e5475594$var$_templateObject());
+$fbda7b08910887fa5073c5e5475594$exports.Container = $fbda7b08910887fa5073c5e5475594$export$Container;

@@ -1,5 +1,8 @@
 {
   "command": {
+    "add": {
+      "registry": "http://localhost:4873"
+    },
     "bootstrap": {
     },
     "publish": {

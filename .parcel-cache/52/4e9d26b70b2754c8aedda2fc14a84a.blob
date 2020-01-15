@@ -1,0 +1,8 @@
+var $eefeede8ed772b2c9f2c05e6d6$exports = {};
+$parcel$require("214652eefeede8ed772b2c9f2c05e6d6", "react");
+
+var $eefeede8ed772b2c9f2c05e6d6$export$default = function OfferCard(props) {
+  return $eefeede8ed772b2c9f2c05e6d6$import$React.createElement("pre", null, JSON.stringify(props, 0, 2));
+};
+
+$eefeede8ed772b2c9f2c05e6d6$exports.default = $eefeede8ed772b2c9f2c05e6d6$export$default;

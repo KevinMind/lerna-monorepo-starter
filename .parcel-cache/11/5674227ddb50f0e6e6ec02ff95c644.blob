@@ -1,0 +1,34 @@
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.BankLogo = exports.Section = exports.Container = void 0;
+
+var _styledComponents = _interopRequireDefault(require("styled-components"));
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+const Container = _styledComponents.default.div`
+  border: 1px solid black;
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+`;
+exports.Container = Container;
+const Section = _styledComponents.default.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid ${({
+  isCustomer
+}) => isCustomer ? 'red' : 'blue'};
+  flex-grow: 1;
+`;
+exports.Section = Section;
+const BankLogo = _styledComponents.default.img`
+  border: 1px solid blue;
+  height: 50px;
+  width: auto;
+`;
+exports.BankLogo = BankLogo;

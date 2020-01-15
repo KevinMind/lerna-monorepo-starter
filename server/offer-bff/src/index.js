@@ -7,11 +7,13 @@ const app = express();
 
 app.use(cors());
 
-app.use('/customer', (req, res) => {
-  return res.json({ customer: true, data: data.RECENT_LA });
+const filterOffers = offers => offers.filter(({ id }) => id %  2 !== 0);
+
+app.use('/customers', (req, res) => {
+  return res.json({ customer: true, data: filterOffers(data.RECENT_LA) });
 });
 
-app.use('/advisor', (req, res) => {
+app.use('/advisors', (req, res) => {
   return res.json({ advisor: true, data: data.RECENT_LA });
 });
 
